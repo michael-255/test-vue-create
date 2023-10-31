@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-
-console.log(import.meta.env.MODE)
-console.log(import.meta.env.BASE_URL)
-console.log(import.meta.env.PROD)
-console.log(import.meta.env.DEV)
-console.log(import.meta.env.SSR)
 </script>
 
 <template>
@@ -14,7 +8,7 @@ console.log(import.meta.env.SSR)
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
         <div class="wrapper">
-            <HelloWorld msg="You did it!" />
+            <HelloWorld msg="App Loaded!" />
 
             <nav>
                 <RouterLink to="/">Home</RouterLink>
