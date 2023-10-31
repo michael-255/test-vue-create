@@ -23,7 +23,7 @@ concurrency:
 jobs:
     # Single deploy job since we're just deploying
     deploy:
-        if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+        # if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
 
         environment:
             name: github-pages
