@@ -1,6 +1,6 @@
 name: Deploy static content to GitHub Pages
 
-run-name: Deploying "${{ github.repository }}" to GitHub Pages
+# run-name: Deploying "${{ github.repository }}" to GitHub Pages
 
 on:
     push:
@@ -29,15 +29,14 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Workflow Information
-              run: |
-                  echo "Repository: ${{ github.repository }}"
-                  echo "Ref: ${{ github.ref }}"
-                  echo "Commit SHA: ${{ github.sha }}"
-                  echo "Run ID: ${{ github.run_id }}"
-                  echo "Actor: ${{ github.actor }}"
-                  echo "Event Name: ${{ github.event_name }}"
-
+            # - name: Workflow Information
+            #   run: |
+            #       echo "Repository: ${{ github.repository }}"
+            #       echo "Ref: ${{ github.ref }}"
+            #       echo "Commit SHA: ${{ github.sha }}"
+            #       echo "Run ID: ${{ github.run_id }}"
+            #       echo "Actor: ${{ github.actor }}"
+            #       echo "Event Name: ${{ github.event_name }}"
             - name: Checkout
               uses: actions/checkout@v3
 
