@@ -21,8 +21,9 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
-    info:
+    build:
         runs-on: ubuntu-latest
+        steps:
         steps:
             - name: Workflow Information
               run: |
@@ -32,10 +33,6 @@ jobs:
                   echo "Run ID: ${{ github.run_id }}"
                   echo "Actor: ${{ github.actor }}"
                   echo "Event Name: ${{ github.event_name }}"
-
-    build:
-        runs-on: ubuntu-latest
-        steps:
             - name: Checkout
               uses: actions/checkout@v3
 
@@ -92,3 +89,5 @@ jobs:
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v2
+              with:
+                  path: './dist'
