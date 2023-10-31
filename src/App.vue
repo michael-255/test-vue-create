@@ -7,7 +7,6 @@ console.log(import.meta.env.BASE_URL)
 console.log(import.meta.env.PROD)
 console.log(import.meta.env.DEV)
 console.log(import.meta.env.SSR)
-console.log(import.meta.env.VITE_TEST)
 </script>
 
 <template>
