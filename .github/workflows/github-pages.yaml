@@ -1,5 +1,7 @@
 name: Deploy static content to GitHub Pages
 
+run_name: Deploying '${{ github.repository }}' to GitHub Pages
+
 on:
     push:
         branches: ['main']
@@ -27,7 +29,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Deploying ${{ github.repository }} to GitHub Pages
+            - name: Workflow Information
               run: |
                   echo "Repository: ${{ github.repository }}"
                   echo "Ref: ${{ github.ref }}"
