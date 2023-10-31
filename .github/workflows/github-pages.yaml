@@ -27,7 +27,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Print repo name
+            - name: Deploying ${{ github.repository }} to GitHub Pages
               run: echo "Deploying ${{ github.repository }} to GitHub Pages"
 
             - name: Checkout
